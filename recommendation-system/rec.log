@@ -1,0 +1,72 @@
+2026-04-27 01:27:06,211 - __main__ - INFO - MySQLÊý¾Ý¿âÁ¬½Ó³É¹¦
+2026-04-27 01:27:08,242 - __main__ - INFO - RedisÁ¬½Ó³É¹¦
+C:\Users\ASUS\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\base.py:442: InconsistentVersionWarning: Trying to unpickle estimator NearestNeighbors from version 1.3.0 when using version 1.7.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+C:\Users\ASUS\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\base.py:442: InconsistentVersionWarning: Trying to unpickle estimator TruncatedSVD from version 1.3.0 when using version 1.7.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+2026-04-27 01:27:08,248 - __main__ - INFO - Ä£ÐÍÒÑ´ÓÎÄ¼þ¼ÓÔØ
+2026-04-27 01:27:08,248 - __main__ - INFO - ÍÆ¼ö·þÎñÆô¶¯ÔÚ http://0.0.0.0:5000
+ * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.
+ * Serving Flask app 'app'
+ * Debug mode: off
+2026-04-27 01:27:08,256 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.4:5000
+2026-04-27 01:27:08,256 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-04-27 01:27:43,649 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2026 01:27:43] "GET /health HTTP/1.1" 200 -
+2026-04-27 01:28:13,226 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2026 01:28:13] "GET /stats HTTP/1.1" 200 -
+2026-04-27 01:28:27,392 - __main__ - INFO - ¿ªÊ¼ÑµÁ·ÍÆ¼öÄ£ÐÍ...
+2026-04-27 01:28:27,553 - __main__ - INFO - »ñÈ¡µ½ 21340 ÌõÐÐÎª¼ÇÂ¼
+2026-04-27 01:28:28,495 - __main__ - INFO - ´´½¨½»»¥¾ØÕó: 357 ÓÃ»§ ¡Á 2034 ×ÊÔ´
+2026-04-27 01:28:28,574 - __main__ - INFO - Ä£ÐÍÑµÁ·Íê³É: Item-CF / User-CF / SVD£¬×ÊÔ´ 2034£¬ÓÃ»§ 357£¬SVD Î¬¶È 50
+2026-04-27 01:28:28,578 - __main__ - INFO - Ä£ÐÍÒÑ±£´æµ½ÎÄ¼þ
+2026-04-27 01:28:28,578 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2026 01:28:28] "POST /train?force=true HTTP/1.1" 200 -
+2026-04-27 01:28:42,325 - __main__ - INFO - GET /recommendations/1 algo=item_cf count=5 preview_ids=[1263, 1167, 20, 550, 351]
+2026-04-27 01:28:42,326 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2026 01:28:42] "GET /recommendations/1?limit=5 HTTP/1.1" 200 -
+2026-04-27 01:28:44,842 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2026 01:28:44] "GET /stats HTTP/1.1" 200 -
+2026-04-27 01:29:18,932 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2026 01:29:18] "GET /health HTTP/1.1" 200 -
+2026-04-27 01:29:18,966 - __main__ - INFO - GET /recommendations/1 algo=svd count=5 preview_ids=[125, 1602, 936, 1980, 158]
+2026-04-27 01:29:18,966 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2026 01:29:18] "GET /recommendations/1?limit=5&exclude_viewed=true&algorithm=svd HTTP/1.1" 200 -
+2026-04-27 01:34:25,530 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2026 01:34:25] "GET /health HTTP/1.1" 200 -
+2026-04-27 01:34:25,544 - __main__ - INFO - ´Ó»º´æ»ñÈ¡ÓÃ»§ 1 µÄÍÆ¼ö (svd)
+2026-04-27 01:34:25,544 - __main__ - INFO - GET /recommendations/1 algo=svd count=5 preview_ids=[125, 1602, 936, 1980, 158]
+2026-04-27 01:34:25,546 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2026 01:34:25] "GET /recommendations/1?limit=5&exclude_viewed=true&algorithm=svd HTTP/1.1" 200 -
+2026-04-27 01:40:47,563 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2026 01:40:47] "GET /health HTTP/1.1" 200 -
+2026-04-27 01:40:47,575 - __main__ - INFO - ´Ó»º´æ»ñÈ¡ÓÃ»§ 1 µÄÍÆ¼ö (svd)
+2026-04-27 01:40:47,575 - __main__ - INFO - GET /recommendations/1 algo=svd count=5 preview_ids=[125, 1602, 936, 1980, 158]
+2026-04-27 01:40:47,576 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2026 01:40:47] "GET /recommendations/1?limit=5&exclude_viewed=true&algorithm=svd HTTP/1.1" 200 -
+2026-04-27 01:42:05,407 - __main__ - INFO - ¿ªÊ¼ÑµÁ·ÍÆ¼öÄ£ÐÍ...
+2026-04-27 01:42:05,533 - __main__ - INFO - »ñÈ¡µ½ 21340 ÌõÐÐÎª¼ÇÂ¼
+2026-04-27 01:42:06,459 - __main__ - INFO - ´´½¨½»»¥¾ØÕó: 357 ÓÃ»§ ¡Á 2034 ×ÊÔ´
+2026-04-27 01:42:06,521 - __main__ - INFO - Ä£ÐÍÑµÁ·Íê³É: Item-CF / User-CF / SVD£¬×ÊÔ´ 2034£¬ÓÃ»§ 357£¬SVD Î¬¶È 50
+2026-04-27 01:42:06,531 - __main__ - INFO - Ä£ÐÍÒÑ±£´æµ½ÎÄ¼þ
+2026-04-27 01:42:06,531 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2026 01:42:06] "POST /train?force=true HTTP/1.1" 200 -
+2026-04-27 01:52:35,821 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2026 01:52:35] "GET /health HTTP/1.1" 200 -
+2026-04-27 01:52:35,827 - __main__ - INFO - ´Ó»º´æ»ñÈ¡ÓÃ»§ 1 µÄÍÆ¼ö (svd)
+2026-04-27 01:52:35,831 - __main__ - INFO - GET /recommendations/1 algo=svd count=5 preview_ids=[125, 1602, 936, 1980, 158]
+2026-04-27 01:52:35,831 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2026 01:52:35] "GET /recommendations/1?limit=5&exclude_viewed=true&algorithm=svd HTTP/1.1" 200 -
+2026-04-27 01:59:30,373 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2026 01:59:30] "GET /health HTTP/1.1" 200 -
+2026-04-27 01:59:30,384 - __main__ - INFO - ´Ó»º´æ»ñÈ¡ÓÃ»§ 1 µÄÍÆ¼ö (svd)
+2026-04-27 01:59:30,384 - __main__ - INFO - GET /recommendations/1 algo=svd count=5 preview_ids=[125, 1602, 936, 1980, 158]
+2026-04-27 01:59:30,384 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2026 01:59:30] "GET /recommendations/1?limit=5&exclude_viewed=true&algorithm=svd HTTP/1.1" 200 -
+2026-04-27 02:07:14,101 - __main__ - INFO - ¿ªÊ¼ÑµÁ·ÍÆ¼öÄ£ÐÍ...
+2026-04-27 02:07:14,242 - __main__ - INFO - »ñÈ¡µ½ 21340 ÌõÐÐÎª¼ÇÂ¼
+2026-04-27 02:07:15,162 - __main__ - INFO - ´´½¨½»»¥¾ØÕó: 357 ÓÃ»§ ¡Á 2034 ×ÊÔ´
+2026-04-27 02:07:15,223 - __main__ - INFO - Ä£ÐÍÑµÁ·Íê³É: Item-CF / User-CF / SVD£¬×ÊÔ´ 2034£¬ÓÃ»§ 357£¬SVD Î¬¶È 50
+2026-04-27 02:07:15,233 - __main__ - INFO - Ä£ÐÍÒÑ±£´æµ½ÎÄ¼þ
+2026-04-27 02:07:15,233 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2026 02:07:15] "POST /train?force=true HTTP/1.1" 200 -
+2026-04-27 02:10:39,578 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2026 02:10:39] "GET /health HTTP/1.1" 200 -
+2026-04-27 02:10:39,594 - __main__ - INFO - ´Ó»º´æ»ñÈ¡ÓÃ»§ 1 µÄÍÆ¼ö (svd)
+2026-04-27 02:10:39,595 - __main__ - INFO - GET /recommendations/1 algo=svd count=5 preview_ids=[125, 1602, 936, 1980, 158]
+2026-04-27 02:10:39,596 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2026 02:10:39] "GET /recommendations/1?limit=5&exclude_viewed=true&algorithm=svd HTTP/1.1" 200 -
+2026-04-27 02:17:51,225 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2026 02:17:51] "GET /health HTTP/1.1" 200 -
+2026-04-27 02:17:51,270 - __main__ - INFO - ´Ó»º´æ»ñÈ¡ÓÃ»§ 1 µÄÍÆ¼ö (svd)
+2026-04-27 02:17:51,270 - __main__ - INFO - GET /recommendations/1 algo=svd count=5 preview_ids=[125, 1602, 936, 1980, 158]
+2026-04-27 02:17:51,270 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2026 02:17:51] "GET /recommendations/1?limit=5&exclude_viewed=true&algorithm=svd HTTP/1.1" 200 -
+2026-04-27 02:22:55,234 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2026 02:22:55] "GET /health HTTP/1.1" 200 -
+2026-04-27 02:22:55,279 - __main__ - INFO - ´Ó»º´æ»ñÈ¡ÓÃ»§ 1 µÄÍÆ¼ö (svd)
+2026-04-27 02:22:55,280 - __main__ - INFO - GET /recommendations/1 algo=svd count=5 preview_ids=[125, 1602, 936, 1980, 158]
+2026-04-27 02:22:55,280 - werkzeug - INFO - 127.0.0.1 - - [27/Apr/2026 02:22:55] "GET /recommendations/1?limit=5&exclude_viewed=true&algorithm=svd HTTP/1.1" 200 -

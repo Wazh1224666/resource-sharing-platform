@@ -1,0 +1,72 @@
+version: '3.8'
+
+services:
+  # Redis缓存服务
+  redis:
+    image: redis:7-alpine
+    container_name: resource-recommendation-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    command: redis-server --appendonly yes
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+    networks:
+      - recommendation-network
+
+  # 推荐系统服务
+  recommendation-service:
+    build: .
+    container_name: resource-recommendation-service
+    ports:
+      - "5000:5000"
+    environment:
+      - MYSQL_HOST=host.docker.internal  # Docker Desktop中使用
+      - MYSQL_PORT=3306
+      - MYSQL_DATABASE=resource_db
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=123456
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - REDIS_DB=0
+      - FLASK_ENV=production
+    volumes:
+      - ./recommendation_model.joblib:/app/recommendation_model.joblib
+    depends_on:
+      redis:
+        condition: service_healthy
+    networks:
+      - recommendation-network
+    restart: unless-stopped
+
+  # 模型训练服务（可选）
+  model-trainer:
+    build: .
+    container_name: resource-model-trainer
+    environment:
+      - MYSQL_HOST=host.docker.internal
+      - MYSQL_PORT=3306
+      - MYSQL_DATABASE=resource_db
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=123456
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+    command: ["python", "app.py", "--train"]
+    depends_on:
+      redis:
+        condition: service_healthy
+    networks:
+      - recommendation-network
+    restart: "no"
+
+networks:
+  recommendation-network:
+    driver: bridge
+
+volumes:
+  redis-data:
+    driver: local

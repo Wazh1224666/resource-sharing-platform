@@ -1,0 +1,75 @@
+2026-04-21 14:21:27,108 - __main__ - INFO - MySQLÊı¾İ¿âÁ¬½Ó³É¹¦
+2026-04-21 14:21:29,157 - __main__ - INFO - RedisÁ¬½Ó³É¹¦
+E:\resource-sharing-platform\recommendation-system\.venv\Lib\site-packages\sklearn\base.py:463: InconsistentVersionWarning: Trying to unpickle estimator NearestNeighbors from version 1.3.0 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+E:\resource-sharing-platform\recommendation-system\.venv\Lib\site-packages\sklearn\base.py:463: InconsistentVersionWarning: Trying to unpickle estimator TruncatedSVD from version 1.3.0 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+2026-04-21 14:21:29,164 - __main__ - INFO - Ä£ĞÍÒÑ´ÓÎÄ¼ş¼ÓÔØ
+2026-04-21 14:21:29,164 - __main__ - INFO - ÍÆ¼ö·şÎñÆô¶¯ÔÚ http://0.0.0.0:5000
+ * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.
+ * Serving Flask app 'app'
+ * Debug mode: off
+2026-04-21 14:21:30,453 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.120:5000
+2026-04-21 14:21:30,453 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-04-21 14:22:10,335 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 14:22:10] "GET /health HTTP/1.1" 200 -
+2026-04-21 14:23:12,009 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 14:23:12] "GET /health HTTP/1.1" 200 -
+2026-04-21 14:23:12,037 - __main__ - WARNING - ÓÃ»§ 1 ²»ÔÚÑµÁ·Êı¾İÖĞ£¬·µ»ØÈÈÃÅ×ÊÔ´£¨ÒÑÅÅ³ı±¾ÈËÉÏ´«£©£»½¨ÒéÖ´ĞĞ POST /train?force=true Ê¹Ä£ĞÍ°üº¬ĞÂÓÃ»§
+2026-04-21 14:23:12,135 - __main__ - INFO - GET /recommendations/1 algo=svd count=5 preview_ids=[1773, 1265, 757, 249, 1514]
+2026-04-21 14:23:12,135 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 14:23:12] "GET /recommendations/1?limit=5&exclude_viewed=true&algorithm=svd HTTP/1.1" 200 -
+2026-04-21 14:23:39,254 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 14:23:39] "GET /health HTTP/1.1" 200 -
+2026-04-21 14:23:39,262 - __main__ - WARNING - ÓÃ»§ 1 ²»ÔÚÑµÁ·Êı¾İÖĞ£¬·µ»ØÈÈÃÅ×ÊÔ´£¨ÒÑÅÅ³ı±¾ÈËÉÏ´«£©£»½¨ÒéÖ´ĞĞ POST /train?force=true Ê¹Ä£ĞÍ°üº¬ĞÂÓÃ»§
+2026-04-21 14:23:39,333 - __main__ - INFO - GET /recommendations/1 algo=item_cf count=5 preview_ids=[2009, 1999, 1989, 1979, 1969]
+2026-04-21 14:23:39,334 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 14:23:39] "GET /recommendations/1?limit=5&exclude_viewed=true&algorithm=item_cf HTTP/1.1" 200 -
+2026-04-21 14:23:42,965 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 14:23:42] "GET /health HTTP/1.1" 200 -
+2026-04-21 14:23:42,972 - __main__ - WARNING - ÓÃ»§ 1 ²»ÔÚÑµÁ·Êı¾İÖĞ£¬·µ»ØÈÈÃÅ×ÊÔ´£¨ÒÑÅÅ³ı±¾ÈËÉÏ´«£©£»½¨ÒéÖ´ĞĞ POST /train?force=true Ê¹Ä£ĞÍ°üº¬ĞÂÓÃ»§
+2026-04-21 14:23:43,043 - __main__ - INFO - GET /recommendations/1 algo=user_cf count=5 preview_ids=[979, 1958, 969, 1948, 959]
+2026-04-21 14:23:43,043 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 14:23:43] "GET /recommendations/1?limit=5&exclude_viewed=true&algorithm=user_cf HTTP/1.1" 200 -
+2026-04-21 14:41:46,973 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 14:41:46] "GET /health HTTP/1.1" 200 -
+2026-04-21 14:41:46,981 - __main__ - WARNING - ÓÃ»§ 1 ²»ÔÚÑµÁ·Êı¾İÖĞ£¬·µ»ØÈÈÃÅ×ÊÔ´£¨ÒÑÅÅ³ı±¾ÈËÉÏ´«£©£»½¨ÒéÖ´ĞĞ POST /train?force=true Ê¹Ä£ĞÍ°üº¬ĞÂÓÃ»§
+2026-04-21 14:41:47,079 - __main__ - INFO - GET /recommendations/1 algo=user_cf count=5 preview_ids=[979, 1958, 969, 1948, 959]
+2026-04-21 14:41:47,079 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 14:41:47] "GET /recommendations/1?limit=5&exclude_viewed=true&algorithm=user_cf HTTP/1.1" 200 -
+2026-04-21 14:54:04,864 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 14:54:04] "GET /health HTTP/1.1" 200 -
+2026-04-21 14:54:04,870 - __main__ - WARNING - ÓÃ»§ 1 ²»ÔÚÑµÁ·Êı¾İÖĞ£¬·µ»ØÈÈÃÅ×ÊÔ´£¨ÒÑÅÅ³ı±¾ÈËÉÏ´«£©£»½¨ÒéÖ´ĞĞ POST /train?force=true Ê¹Ä£ĞÍ°üº¬ĞÂÓÃ»§
+2026-04-21 14:54:04,975 - __main__ - INFO - GET /recommendations/1 algo=user_cf count=5 preview_ids=[979, 1958, 969, 1948, 959]
+2026-04-21 14:54:04,976 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 14:54:04] "GET /recommendations/1?limit=5&exclude_viewed=true&algorithm=user_cf HTTP/1.1" 200 -
+2026-04-21 14:54:06,592 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 14:54:06] "GET /health HTTP/1.1" 200 -
+2026-04-21 14:54:06,600 - __main__ - WARNING - ÓÃ»§ 1 ²»ÔÚÑµÁ·Êı¾İÖĞ£¬·µ»ØÈÈÃÅ×ÊÔ´£¨ÒÑÅÅ³ı±¾ÈËÉÏ´«£©£»½¨ÒéÖ´ĞĞ POST /train?force=true Ê¹Ä£ĞÍ°üº¬ĞÂÓÃ»§
+2026-04-21 14:54:06,703 - __main__ - INFO - GET /recommendations/1 algo=user_cf count=5 preview_ids=[979, 1958, 969, 1948, 959]
+2026-04-21 14:54:06,704 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 14:54:06] "GET /recommendations/1?limit=5&exclude_viewed=true&algorithm=user_cf HTTP/1.1" 200 -
+2026-04-21 14:54:31,856 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 14:54:31] "GET /health HTTP/1.1" 200 -
+2026-04-21 14:54:31,864 - __main__ - WARNING - ÓÃ»§ 1 ²»ÔÚÑµÁ·Êı¾İÖĞ£¬·µ»ØÈÈÃÅ×ÊÔ´£¨ÒÑÅÅ³ı±¾ÈËÉÏ´«£©£»½¨ÒéÖ´ĞĞ POST /train?force=true Ê¹Ä£ĞÍ°üº¬ĞÂÓÃ»§
+2026-04-21 14:54:31,963 - __main__ - INFO - GET /recommendations/1 algo=user_cf count=5 preview_ids=[979, 1958, 969, 1948, 959]
+2026-04-21 14:54:31,964 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 14:54:31] "GET /recommendations/1?limit=5&exclude_viewed=true&algorithm=user_cf HTTP/1.1" 200 -
+2026-04-21 15:05:03,388 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 15:05:03] "GET /health HTTP/1.1" 200 -
+2026-04-21 15:05:03,399 - __main__ - WARNING - ÓÃ»§ 1 ²»ÔÚÑµÁ·Êı¾İÖĞ£¬·µ»ØÈÈÃÅ×ÊÔ´£¨ÒÑÅÅ³ı±¾ÈËÉÏ´«£©£»½¨ÒéÖ´ĞĞ POST /train?force=true Ê¹Ä£ĞÍ°üº¬ĞÂÓÃ»§
+2026-04-21 15:05:03,499 - __main__ - INFO - GET /recommendations/1 algo=user_cf count=5 preview_ids=[979, 1958, 969, 1948, 959]
+2026-04-21 15:05:03,500 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 15:05:03] "GET /recommendations/1?limit=5&exclude_viewed=true&algorithm=user_cf HTTP/1.1" 200 -
+2026-04-21 15:05:26,354 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 15:05:26] "GET /health HTTP/1.1" 200 -
+2026-04-21 15:05:26,363 - __main__ - WARNING - ÓÃ»§ 1 ²»ÔÚÑµÁ·Êı¾İÖĞ£¬·µ»ØÈÈÃÅ×ÊÔ´£¨ÒÑÅÅ³ı±¾ÈËÉÏ´«£©£»½¨ÒéÖ´ĞĞ POST /train?force=true Ê¹Ä£ĞÍ°üº¬ĞÂÓÃ»§
+2026-04-21 15:05:26,469 - __main__ - INFO - GET /recommendations/1 algo=user_cf count=5 preview_ids=[979, 1958, 969, 1948, 959]
+2026-04-21 15:05:26,469 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 15:05:26] "GET /recommendations/1?limit=5&exclude_viewed=true&algorithm=user_cf HTTP/1.1" 200 -
+2026-04-21 15:05:49,875 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 15:05:49] "GET /health HTTP/1.1" 200 -
+2026-04-21 15:05:49,884 - __main__ - WARNING - ÓÃ»§ 1 ²»ÔÚÑµÁ·Êı¾İÖĞ£¬·µ»ØÈÈÃÅ×ÊÔ´£¨ÒÑÅÅ³ı±¾ÈËÉÏ´«£©£»½¨ÒéÖ´ĞĞ POST /train?force=true Ê¹Ä£ĞÍ°üº¬ĞÂÓÃ»§
+2026-04-21 15:05:49,983 - __main__ - INFO - GET /recommendations/1 algo=user_cf count=5 preview_ids=[979, 1958, 969, 1948, 959]
+2026-04-21 15:05:49,984 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 15:05:49] "GET /recommendations/1?limit=5&exclude_viewed=true&algorithm=user_cf HTTP/1.1" 200 -
+2026-04-21 15:06:55,320 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 15:06:55] "GET /health HTTP/1.1" 200 -
+2026-04-21 15:06:55,325 - __main__ - WARNING - ÓÃ»§ 1 ²»ÔÚÑµÁ·Êı¾İÖĞ£¬·µ»ØÈÈÃÅ×ÊÔ´£¨ÒÑÅÅ³ı±¾ÈËÉÏ´«£©£»½¨ÒéÖ´ĞĞ POST /train?force=true Ê¹Ä£ĞÍ°üº¬ĞÂÓÃ»§
+2026-04-21 15:06:55,421 - __main__ - INFO - GET /recommendations/1 algo=user_cf count=5 preview_ids=[979, 1958, 969, 1948, 959]
+2026-04-21 15:06:55,422 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 15:06:55] "GET /recommendations/1?limit=5&exclude_viewed=true&algorithm=user_cf HTTP/1.1" 200 -
+2026-04-21 15:27:32,872 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 15:27:32] "GET /health HTTP/1.1" 200 -
+2026-04-21 15:27:32,919 - __main__ - WARNING - ÓÃ»§ 1 ²»ÔÚÑµÁ·Êı¾İÖĞ£¬·µ»ØÈÈÃÅ×ÊÔ´£¨ÒÑÅÅ³ı±¾ÈËÉÏ´«£©£»½¨ÒéÖ´ĞĞ POST /train?force=true Ê¹Ä£ĞÍ°üº¬ĞÂÓÃ»§
+2026-04-21 15:27:33,029 - __main__ - INFO - GET /recommendations/1 algo=user_cf count=5 preview_ids=[979, 1958, 969, 1948, 959]
+2026-04-21 15:27:33,030 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 15:27:33] "GET /recommendations/1?limit=5&exclude_viewed=true&algorithm=user_cf HTTP/1.1" 200 -
+2026-04-21 15:27:49,411 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 15:27:49] "GET /health HTTP/1.1" 200 -
+2026-04-21 15:27:49,420 - __main__ - WARNING - ÓÃ»§ 1 ²»ÔÚÑµÁ·Êı¾İÖĞ£¬·µ»ØÈÈÃÅ×ÊÔ´£¨ÒÑÅÅ³ı±¾ÈËÉÏ´«£©£»½¨ÒéÖ´ĞĞ POST /train?force=true Ê¹Ä£ĞÍ°üº¬ĞÂÓÃ»§
+2026-04-21 15:27:49,528 - __main__ - INFO - GET /recommendations/1 algo=user_cf count=5 preview_ids=[979, 1958, 969, 1948, 959]
+2026-04-21 15:27:49,529 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 15:27:49] "GET /recommendations/1?limit=5&exclude_viewed=true&algorithm=user_cf HTTP/1.1" 200 -
+2026-04-21 15:35:00,041 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 15:35:00] "GET /health HTTP/1.1" 200 -
+2026-04-21 15:35:00,084 - __main__ - WARNING - ÓÃ»§ 1 ²»ÔÚÑµÁ·Êı¾İÖĞ£¬·µ»ØÈÈÃÅ×ÊÔ´£¨ÒÑÅÅ³ı±¾ÈËÉÏ´«£©£»½¨ÒéÖ´ĞĞ POST /train?force=true Ê¹Ä£ĞÍ°üº¬ĞÂÓÃ»§
+2026-04-21 15:35:00,188 - __main__ - INFO - GET /recommendations/1 algo=user_cf count=5 preview_ids=[979, 1958, 969, 1948, 959]
+2026-04-21 15:35:00,189 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 15:35:00] "GET /recommendations/1?limit=5&exclude_viewed=true&algorithm=user_cf HTTP/1.1" 200 -
