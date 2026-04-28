@@ -1,0 +1,20 @@
+
+> resource-share-web@0.0.0 dev
+> vite
+
+
+  [32m[1mVITE[22m v8.0.0-beta.16[39m  [2mready in [0m[1m1503[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+[2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
+[2m12:22:15[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/router/index.js[22m
+[2m12:22:28[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/router/index.js[22m
+[2m12:33:10[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/Home.vue[22m
+[2m12:33:30[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/Home.vue[22m
+[2m12:33:45[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/Home.vue[22m
+[2m12:34:01[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/Home.vue[22m
+[2m12:34:17[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/Home.vue[22m
+[2m13:02:36[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/Login.vue, /src/views/Home.vue, /src/views/Statistics.vue[22m
+[2m13:10:31[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/Login.vue, /src/views/Home.vue, /src/views/Statistics.vue[22m
+[2m13:16:38[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/Login.vue, /src/views/Home.vue, /src/views/Statistics.vue[22m
+[2m13:19:28[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/Login.vue, /src/views/Home.vue, /src/views/Statistics.vue[22m
