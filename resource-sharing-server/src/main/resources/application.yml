@@ -1,0 +1,63 @@
+server:
+  port: 8080 # ????????? Vue3 ???????
+  servlet:
+    context-path: /api # ??????????????????
+
+spring:
+  application:
+    name: resource-sharing-platform
+
+  # ???????
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    # ?? resource_db ?? Navicat ????????
+    url: jdbc:mysql://localhost:3306/resource_db?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8&allowPublicKeyRetrieval=true&useSSL=false
+    username: root        # ????????
+    password: 123456 # ???????????????? ???
+
+  # ???????????1MB????????
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 100MB      # ????????
+      max-request-size: 100MB   # ????????
+
+# MyBatis Plus ????
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # ????????? SQL?????
+    map-underscore-to-camel-case: true # ?????????? create_time ?? Java ? createTime
+  global-config:
+    db-config:
+      id-type: auto # ????????
+
+# ????
+logging:
+  level:
+    com.zhaojiahao.resource: debug # ????????????
+
+file:
+  upload-path: E:/resource-sharing-platform/uploads/
+
+auth:
+  # 用于创建 TEACHER / ADMIN 账号的管理密钥（请改成你自己的复杂字符串）
+  admin-register-key: "CHANGE_ME_STRONG_KEY"
+
+# 毕设：批量模拟用户 / 资源 / 浏览下载行为（先执行 sql/resource_user_behavior.sql）
+# 启动一次后建议改回 enabled: false，避免误重复执行
+seed:
+  enabled: true
+  skip-if-exists: true
+  teacher-count: 50
+  student-count: 300
+  resource-count: 2000
+  behavior-count: 20000
+
+# 推荐系统配置
+recommendation:
+  service:
+    url: http://localhost:5000  # Python推荐服务地址
+    enabled: true               # 是否启用推荐服务
+    timeout: 5000               # 请求超时时间(ms)
+    cache-enabled: true         # 是否启用缓存
+    cache-ttl: 3600             # 缓存时间(秒)
