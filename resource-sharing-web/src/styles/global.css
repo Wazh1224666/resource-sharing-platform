@@ -1,0 +1,446 @@
+/* ============================================================================
+   Global design system + Element Plus theme overrides
+   ============================================================================ */
+
+:root {
+  /* ==================== Color System ==================== */
+  /* Primary palette */
+  --app-color-primary-50: #eff6ff;
+  --app-color-primary-100: #dbeafe;
+  --app-color-primary-200: #bfdbfe;
+  --app-color-primary-300: #93c5fd;
+  --app-color-primary-400: #60a5fa;
+  --app-color-primary-500: #3b82f6;
+  --app-color-primary-600: #2563eb;
+  --app-color-primary-700: #1d4ed8;
+  --app-color-primary-800: #1e40af;
+  --app-color-primary-900: #1e3a8a;
+
+  /* Neutral palette */
+  --app-color-neutral-50: #f8fafc;
+  --app-color-neutral-100: #f1f5f9;
+  --app-color-neutral-200: #e2e8f0;
+  --app-color-neutral-300: #cbd5e1;
+  --app-color-neutral-400: #94a3b8;
+  --app-color-neutral-500: #64748b;
+  --app-color-neutral-600: #475569;
+  --app-color-neutral-700: #334155;
+  --app-color-neutral-800: #1e293b;
+  --app-color-neutral-900: #0f172a;
+
+  /* Semantic colors */
+  --app-color-success: #10b981;
+  --app-color-warning: #f59e0b;
+  --app-color-error: #ef4444;
+  --app-color-info: #3b82f6;
+
+  /* Background gradients */
+  --app-bg: radial-gradient(1200px 600px at 15% 10%, rgba(59, 130, 246, 0.15), transparent 60%),
+    radial-gradient(900px 500px at 85% 20%, rgba(16, 185, 129, 0.12), transparent 55%),
+    radial-gradient(900px 500px at 50% 95%, rgba(239, 68, 68, 0.08), transparent 55%),
+    linear-gradient(180deg, #f8fafc 0%, #f1f5f9 60%, #f8fafc 100%);
+
+  --app-text: var(--app-color-neutral-900);
+  --app-text-muted: var(--app-color-neutral-600);
+  --app-text-light: var(--app-color-neutral-500);
+  --app-border: rgba(30, 41, 59, 0.08);
+  --app-border-hover: rgba(30, 41, 59, 0.16);
+  --app-bg-card: rgba(255, 255, 255, 0.92);
+  --app-bg-overlay: rgba(255, 255, 255, 0.88);
+
+  /* ==================== Typography ==================== */
+  --app-font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans SC",
+    "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", Arial, sans-serif;
+  --app-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Font sizes - Type scale (1.125 ratio) */
+  --app-font-size-xs: 0.75rem;   /* 12px */
+  --app-font-size-sm: 0.875rem;  /* 14px */
+  --app-font-size-base: 1rem;    /* 16px */
+  --app-font-size-lg: 1.125rem;  /* 18px */
+  --app-font-size-xl: 1.25rem;   /* 20px */
+  --app-font-size-2xl: 1.5rem;   /* 24px */
+  --app-font-size-3xl: 1.875rem; /* 30px */
+  --app-font-size-4xl: 2.25rem;  /* 36px */
+
+  /* Font weights */
+  --app-font-weight-normal: 400;
+  --app-font-weight-medium: 500;
+  --app-font-weight-semibold: 600;
+  --app-font-weight-bold: 700;
+
+  /* Line heights */
+  --app-line-height-tight: 1.2;
+  --app-line-height-normal: 1.5;
+  --app-line-height-relaxed: 1.75;
+
+  /* ==================== Spacing ==================== */
+  /* 4px base unit */
+  --app-spacing-unit: 0.25rem; /* 4px */
+  --app-spacing-1: calc(1 * var(--app-spacing-unit));  /* 4px */
+  --app-spacing-2: calc(2 * var(--app-spacing-unit));  /* 8px */
+  --app-spacing-3: calc(3 * var(--app-spacing-unit));  /* 12px */
+  --app-spacing-4: calc(4 * var(--app-spacing-unit));  /* 16px */
+  --app-spacing-5: calc(6 * var(--app-spacing-unit));  /* 24px */
+  --app-spacing-6: calc(8 * var(--app-spacing-unit));  /* 32px */
+  --app-spacing-7: calc(12 * var(--app-spacing-unit)); /* 48px */
+  --app-spacing-8: calc(16 * var(--app-spacing-unit)); /* 64px */
+
+  /* ==================== Border Radius ==================== */
+  --app-radius-sm: 0.375rem;   /* 6px */
+  --app-radius-md: 0.625rem;   /* 10px */
+  --app-radius-lg: 0.875rem;   /* 14px */
+  --app-radius-xl: 1.25rem;    /* 20px */
+  --app-radius-2xl: 1.5rem;    /* 24px */
+  --app-radius-full: 9999px;
+
+  /* ==================== Shadows ==================== */
+  --app-shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --app-shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  --app-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --app-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --app-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  --app-shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  --app-shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+
+  /* ==================== Transitions & Animations ==================== */
+  --app-transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --app-transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --app-transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  --app-transition-bounce: 300ms cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* ==================== Z-index ==================== */
+  --app-z-dropdown: 10;
+  --app-z-sticky: 20;
+  --app-z-fixed: 30;
+  --app-z-modal: 40;
+  --app-z-popover: 50;
+  --app-z-toast: 60;
+  --app-z-tooltip: 70;
+
+  /* ==================== Element Plus Theme Overrides ==================== */
+  --el-color-primary: var(--app-color-primary-600);
+  --el-color-primary-light-3: var(--app-color-primary-400);
+  --el-color-primary-light-5: var(--app-color-primary-300);
+  --el-color-primary-light-7: var(--app-color-primary-200);
+  --el-color-primary-light-8: var(--app-color-primary-100);
+  --el-color-primary-light-9: var(--app-color-primary-50);
+  --el-color-primary-dark-2: var(--app-color-primary-700);
+
+  --el-color-success: var(--app-color-success);
+  --el-color-warning: var(--app-color-warning);
+  --el-color-danger: var(--app-color-error);
+  --el-color-info: var(--app-color-info);
+
+  --el-font-family: var(--app-font-family);
+  --el-border-radius-base: var(--app-radius-md);
+  --el-border-radius-small: var(--app-radius-sm);
+  --el-border-radius-round: var(--app-radius-full);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--app-text);
+  font-family: var(--el-font-family);
+  background: var(--app-bg);
+}
+
+#app {
+  min-height: 100vh;
+}
+
+::selection {
+  background: rgba(59, 130, 246, 0.2);
+  color: inherit;
+}
+
+/* ==================== Utility Classes ==================== */
+/* Text utilities */
+.text-xs { font-size: var(--app-font-size-xs); }
+.text-sm { font-size: var(--app-font-size-sm); }
+.text-base { font-size: var(--app-font-size-base); }
+.text-lg { font-size: var(--app-font-size-lg); }
+.text-xl { font-size: var(--app-font-size-xl); }
+.text-2xl { font-size: var(--app-font-size-2xl); }
+.text-3xl { font-size: var(--app-font-size-3xl); }
+.text-4xl { font-size: var(--app-font-size-4xl); }
+
+.font-normal { font-weight: var(--app-font-weight-normal); }
+.font-medium { font-weight: var(--app-font-weight-medium); }
+.font-semibold { font-weight: var(--app-font-weight-semibold); }
+.font-bold { font-weight: var(--app-font-weight-bold); }
+
+.text-primary { color: var(--app-color-primary-600); }
+.text-success { color: var(--app-color-success); }
+.text-warning { color: var(--app-color-warning); }
+.text-error { color: var(--app-color-error); }
+.text-muted { color: var(--app-text-muted); }
+.text-light { color: var(--app-text-light); }
+
+/* Spacing utilities */
+.m-1 { margin: var(--app-spacing-1); }
+.m-2 { margin: var(--app-spacing-2); }
+.m-3 { margin: var(--app-spacing-3); }
+.m-4 { margin: var(--app-spacing-4); }
+.m-5 { margin: var(--app-spacing-5); }
+
+.p-1 { padding: var(--app-spacing-1); }
+.p-2 { padding: var(--app-spacing-2); }
+.p-3 { padding: var(--app-spacing-3); }
+.p-4 { padding: var(--app-spacing-4); }
+.p-5 { padding: var(--app-spacing-5); }
+
+/* Layout utilities */
+.container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--app-spacing-4);
+  padding-right: var(--app-spacing-4);
+}
+
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.gap-1 { gap: var(--app-spacing-1); }
+.gap-2 { gap: var(--app-spacing-2); }
+.gap-3 { gap: var(--app-spacing-3); }
+.gap-4 { gap: var(--app-spacing-4); }
+.gap-5 { gap: var(--app-spacing-5); }
+
+/* Visual utilities */
+.rounded-sm { border-radius: var(--app-radius-sm); }
+.rounded-md { border-radius: var(--app-radius-md); }
+.rounded-lg { border-radius: var(--app-radius-lg); }
+.rounded-xl { border-radius: var(--app-radius-xl); }
+.rounded-2xl { border-radius: var(--app-radius-2xl); }
+.rounded-full { border-radius: var(--app-radius-full); }
+
+.shadow-sm { box-shadow: var(--app-shadow-sm); }
+.shadow-md { box-shadow: var(--app-shadow-md); }
+.shadow-lg { box-shadow: var(--app-shadow-lg); }
+.shadow-xl { box-shadow: var(--app-shadow-xl); }
+.shadow-2xl { box-shadow: var(--app-shadow-2xl); }
+
+.bg-card { background-color: var(--app-bg-card); }
+.bg-overlay { background-color: var(--app-bg-overlay); }
+.backdrop-blur { backdrop-filter: blur(10px); }
+
+/* Transition utilities */
+.transition-fast { transition: var(--app-transition-fast); }
+.transition-normal { transition: var(--app-transition-normal); }
+.transition-slow { transition: var(--app-transition-slow); }
+.transition-bounce { transition: var(--app-transition-bounce); }
+
+/* ==================== Enhanced Element Plus Styles ==================== */
+.el-card {
+  border: 1px solid var(--app-border);
+  background-color: var(--app-bg-card);
+  backdrop-filter: blur(10px);
+  transition: var(--app-transition-normal);
+}
+
+.el-card:hover {
+  border-color: var(--app-border-hover);
+  box-shadow: var(--app-shadow-md);
+}
+
+.el-dialog {
+  border-radius: var(--app-radius-lg);
+  overflow: hidden;
+  background-color: var(--app-bg-overlay);
+  backdrop-filter: blur(20px);
+}
+
+.el-dialog__header {
+  padding: var(--app-spacing-4) var(--app-spacing-4) 0;
+  margin-bottom: var(--app-spacing-3);
+}
+
+.el-dialog__body {
+  padding: var(--app-spacing-4);
+}
+
+.el-dialog__footer {
+  padding: 0 var(--app-spacing-4) var(--app-spacing-4);
+}
+
+.el-button {
+  font-weight: var(--app-font-weight-semibold);
+  transition: var(--app-transition-normal);
+}
+
+.el-button--primary {
+  background: linear-gradient(135deg, var(--app-color-primary-500), var(--app-color-primary-600));
+  border: none;
+}
+
+.el-button--primary:hover {
+  background: linear-gradient(135deg, var(--app-color-primary-600), var(--app-color-primary-700));
+  transform: translateY(-1px);
+  box-shadow: var(--app-shadow-md);
+}
+
+.el-button--primary:active {
+  transform: translateY(0);
+}
+
+.el-input, .el-select, .el-textarea {
+  --el-input-border-color: var(--app-border);
+  --el-input-hover-border-color: var(--app-border-hover);
+  transition: var(--app-transition-fast);
+}
+
+.el-input:hover, .el-select:hover, .el-textarea:hover {
+  --el-input-border-color: var(--app-border-hover);
+}
+
+.el-tabs__item {
+  font-weight: var(--app-font-weight-semibold);
+  transition: var(--app-transition-fast);
+}
+
+.el-tabs__item:hover {
+  color: var(--app-color-primary-600);
+}
+
+.el-tabs__item.is-active {
+  color: var(--app-color-primary-600);
+}
+
+.el-tabs__active-bar {
+  background-color: var(--app-color-primary-600);
+  height: 3px;
+  border-radius: var(--app-radius-full);
+}
+
+.el-table {
+  --el-table-border-color: var(--app-border);
+  --el-table-header-bg-color: var(--app-color-neutral-50);
+  --el-table-row-hover-bg-color: var(--app-color-neutral-50);
+}
+
+.el-table th {
+  font-weight: var(--app-font-weight-semibold);
+  background-color: var(--app-color-neutral-50);
+}
+
+.el-table tr {
+  transition: var(--app-transition-fast);
+}
+
+.el-table tr:hover {
+  background-color: var(--app-color-neutral-50);
+}
+
+.el-tag {
+  font-weight: var(--app-font-weight-medium);
+  border: none;
+}
+
+.el-tag--primary {
+  background-color: var(--app-color-primary-100);
+  color: var(--app-color-primary-700);
+}
+
+.el-tag--success {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: var(--app-color-success);
+}
+
+.el-tag--warning {
+  background-color: rgba(245, 158, 11, 0.1);
+  color: var(--app-color-warning);
+}
+
+.el-tag--danger {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: var(--app-color-error);
+}
+
+.el-tag--info {
+  background-color: var(--app-color-neutral-100);
+  color: var(--app-color-neutral-700);
+}
+
+/* ==================== Custom Scrollbar ==================== */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--app-color-neutral-100);
+  border-radius: var(--app-radius-full);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--app-color-neutral-300);
+  border-radius: var(--app-radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--app-color-neutral-400);
+}
+
+/* ==================== Responsive Adjustments ==================== */
+@media (max-width: 768px) {
+  .container {
+    padding-left: var(--app-spacing-3);
+    padding-right: var(--app-spacing-3);
+  }
+
+  .el-dialog {
+    width: 90% !important;
+    margin: var(--app-spacing-4) auto;
+  }
+
+  .el-table {
+    font-size: var(--app-font-size-sm);
+  }
+
+  .el-table th,
+  .el-table td {
+    padding: var(--app-spacing-2) !important;
+  }
+}
+
+/* ==================== Animation Keyframes ==================== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.animate-fadeIn {
+  animation: fadeIn var(--app-transition-normal) ease-out;
+}
+
+.animate-slideInRight {
+  animation: slideInRight var(--app-transition-normal) ease-out;
+}
+
+.animate-pulse {
+  animation: pulse 2s var(--app-transition-bounce) infinite;
+}
+
