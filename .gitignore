@@ -1,0 +1,73 @@
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Build artifacts
+resource-sharing-server/target/
+resource-sharing-server/*.log
+resource-sharing-server/spring-boot.log
+resource-sharing-server/springboot*.log
+resource-sharing-server/app.log
+resource-sharing-server/compile.log
+
+# Frontend
+resource-share-web/node_modules/
+resource-share-web/dist/
+resource-share-web/vite.log
+resource-share-web/.env.local
+resource-share-web/.env.*.local
+
+# Uploads
+uploads/
+!uploads/.gitkeep
+
+# Test files
+test_*.png
+test_*.txt
+test_*.docx
+test_download*
+test_fixed*
+test_sim*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+logs/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+~$*
+
+# Recommendation system
+recommendation-system/__pycache__/
+recommendation-system/*.pyc
+recommendation-system/data/
+recommendation-system/models/
